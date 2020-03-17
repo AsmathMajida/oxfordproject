@@ -53,11 +53,86 @@ Then the user enters journal name in search box
 Then the user gets the title and prints
 Then the user should close the browser
 
-@tc07_Oxford_Academy_Image_save
-Scenario: Saving an image from website
+@tc07_Oxford_Academy_Download_journal
+Scenario: download Csv.file from journal
+	
+Given I launch the chrome browser 
+When I open the oxford website
+Then I click the journalAtoZ button
+Then I click dispatch date button
+Then I select a journal
+Then I download the file
+And I close the page
 
-Given user should launch the browser
-Then user should open the Oxford website
-Then user should click the link
-Then user should save the image
-Then user should close the browser
+@tc08_Oxford_Academy_Link_count
+Scenario: Counting number of links in a page
+
+Given user launches the chrome browser
+When user opens the webpage and logs in
+Then user counts the number of journals and prints
+Then closes the page 
+
+@tc09_Oxford_Academy_Print_email
+Scenario: Printing the email id
+
+Given I launched the chrome browser
+When I opened the website
+Then I print the email id
+And I closed the page
+
+@tc10_Oxford_Academy_Assert_check
+Scenario: Checking the printed email
+
+Given user launch chrome browser
+When user should open oxford website
+Then check email id
+And close page
+
+@tc11_Oxford_Academy_Currency_change
+Scenario: Changing the currency
+
+Given user launched the chrome browser
+When user opened the website
+Then user select book
+Then user select currency
+And user close the page
+
+@tc12_Oxford_Academy_Edit_profile
+Scenario: User editing the profile
+
+Given I launch the chrome 
+When I open the website and logs-in
+Then I open the edit personal details page
+Then I edit and personal details and updates
+And I closes the browser
+
+@tc13_Oxford_Academy_Save_search
+Scenario: User checks if the search is saved 
+
+Given launching the browser
+When opening the webpage and logs in
+Then user searches a journal and saves
+And user closes the webpage
+
+@tc14_Oxford_Academy_Delete_saved_search
+Scenario: User deletes the saved search
+
+Given The user should launch the chrome browser
+When user should open the website and logs in
+Then user should open the saved search
+Then user should delete the saved search
+And user should close the browser
+
+@tc15_Oxford_Academy_Communication_preference
+Scenario: User chooses the journal preference
+
+Given user launching the chrome browser
+When user open the website and logged in
+Then user selects the communication preference 
+Then user closed the browser
+
+
+
+ 	
+
+

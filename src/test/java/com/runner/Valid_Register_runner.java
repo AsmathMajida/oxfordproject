@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 		monochrome = true
 		)
 
-public class Valid_Register_runner 
+public class Valid_Register_runner
 {
 
 }

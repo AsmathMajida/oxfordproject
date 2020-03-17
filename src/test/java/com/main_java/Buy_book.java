@@ -20,7 +20,7 @@ By buy=By.xpath("//*[@id=\"collapsible-table-0\"]/tr/td[5]/a");
 By remove=By.xpath("//*[@id=\"shopping_basket\"]/tbody/tr[2]/td[5]/input");
 	public void launchUrl() 
 	{
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/Driver/chromedriver.exe");//Launching the chrome browser
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/Driver/chromedriver.exe"); //Launching the chrome browser
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();//Maximizing the window
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -31,12 +31,14 @@ By remove=By.xpath("//*[@id=\"shopping_basket\"]/tbody/tr[2]/td[5]/input");
 		driver.get("https://academic.oup.com/journals");//Launching the website
 
 	}
+	// selecting the journal
 	public void history_click()
 	{
 		driver.findElement(alpha).click();
 		driver.findElement(d).click();
 		driver.findElement(history).click();
 	}
+	//purchasing details
 	public void purchase()
 	{
 		driver.findElement(purchase).click();

@@ -25,6 +25,7 @@ WebDriver driver;
 		System.out.println(driver.getTitle());
 		driver.findElement(By.xpath("//*[@id=\"header-account-info-user-fullname\"]")).click();//Clicking the sign in button
 }
+	//Enter user details for valid log in
 	public void oxford_details(String excel_emailid,String excel_password)throws InterruptedException
 	{
 		driver.findElement(By.xpath("//*[@id=\"user_LoginFormPopup\"]")).sendKeys(excel_emailid);
@@ -34,8 +35,9 @@ WebDriver driver;
 		Thread.sleep(2000);
 	}
 		
-	public void oxford_close() 
+	public void oxford_close() throws InterruptedException 
 	{
+		Thread.sleep(3000);
 		driver.close();//closing the website
 	}
 

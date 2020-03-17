@@ -23,6 +23,7 @@ WebDriver driver;
 		driver.get("https://academic.oup.com/journals");//Launching the website
 		System.out.println(driver.getTitle());
 	}
+	// To search the journal
 	public void search_Journal()
 	{
 		driver.findElement(By.xpath("//*[@id=\"MicrositeSearchTerm\"]")).sendKeys("comics");

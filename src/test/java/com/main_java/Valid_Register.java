@@ -28,6 +28,7 @@ public class Valid_Register
 			driver.get("https://academic.oup.com/journals");//Launching the website
 			System.out.println(driver.getTitle());
 		}
+		//Enter the details for valid registration
 		public void register_details() throws InterruptedException//Entering the details in the required field
 		{
 			driver.findElement(register).click();

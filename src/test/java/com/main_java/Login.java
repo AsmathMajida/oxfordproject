@@ -19,12 +19,14 @@ public class Login
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		System.out.println(driver.getTitle());
 }
+	
 	public void oxford_homepage()
 	{
 		driver.get("https://academic.oup.com/journals");//Launching the Oxford journal Website
 		System.out.println(driver.getTitle());
 		driver.findElement(By.xpath("//*[@id=\"header-account-info-user-fullname\"]")).click();//Clicking the sign in button
 }
+	// log in details
 	public void oxford_details(String excel_emailid,String excel_password)throws InterruptedException
 	{
 		driver.findElement(By.xpath("//*[@id=\"user_LoginFormPopup\"]")).sendKeys(excel_emailid);
@@ -34,8 +36,9 @@ public class Login
 		Thread.sleep(2000);
 	}
 		
-	public void oxford_close() 
+	public void oxford_close() throws InterruptedException 
 	{
+		Thread.sleep(3000);
 		driver.close();//closing the website
 	}
 

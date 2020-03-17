@@ -12,7 +12,8 @@ import cucumber.api.junit.Cucumber;
 		tags = {"@tc04_Oxford_Academy_valid_login"},
 		glue = {"com.steps"},
 		monochrome = true
-		)public class Valid_login_runner
+		)
+public class Valid_login_runner
 {
 
 }
