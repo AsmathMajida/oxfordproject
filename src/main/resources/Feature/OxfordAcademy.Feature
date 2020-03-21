@@ -106,7 +106,7 @@ Then I open the edit personal details page
 Then I edit and personal details and updates
 And I closes the browser
 
-@tc13_Oxford_Academy_Save_search
+@tc13_Oxford_Academy_count_subscription
 Scenario: User checks if the search is saved 
 
 Given launching the browser

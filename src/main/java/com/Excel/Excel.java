@@ -18,7 +18,7 @@ public class Excel
 		FileInputStream fil=new FileInputStream(new File("src/test/resources/Excel/Data.xlsx"));
 		XSSFWorkbook workbook=new XSSFWorkbook(fil);
 		XSSFSheet sheet=workbook.getSheet("details");
-		int rowcount=sheet.getLastRowNum();
+		int rowcount=sheet.getLastRowNum();//count the number of rows
 		System.out.println(rowcount);
 		
 		return rowcount;
